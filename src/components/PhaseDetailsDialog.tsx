@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import type { AuditWorker } from '../../shared/audit.ts'
 
 interface PhaseDetailsDialogProps {
@@ -54,7 +55,7 @@ export function PhaseDetailsDialog({
 
   const fixes = result.recommendations.slice(0, 5)
 
-  return (
+  return createPortal(
     <div
       className={`phase-dialog__backdrop ${
         closing ? 'phase-dialog__backdrop--closing' : ''
@@ -118,6 +119,7 @@ export function PhaseDetailsDialog({
           )}
         </section>
       </section>
-    </div>
+    </div>,
+    document.body,
   )
 }

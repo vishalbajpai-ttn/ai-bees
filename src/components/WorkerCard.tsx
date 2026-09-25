@@ -77,7 +77,7 @@ export function WorkerCard({ worker }: WorkerCardProps) {
             className="worker-details"
             type="button"
             aria-expanded={expanded}
-            onClick={() => setExpanded((value) => !value)}
+            onClick={() => setExpanded(true)}
           >
             View details
             <ChevronIcon />

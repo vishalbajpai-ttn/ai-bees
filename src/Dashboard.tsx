@@ -171,7 +171,7 @@ export default function Dashboard() {
           </span>
           <span>
             <strong>AI BEES</strong>
-            <small>Website intelligence</small>
+            <small>Bees intelligence</small>
           </span>
         </a>
 
@@ -221,14 +221,14 @@ export default function Dashboard() {
         <div className="workspace">
           <section className="intro">
             <div>
-              <span className="section-kicker">Website intelligence</span>
+              <span className="section-kicker">Bees intelligence</span>
               <h1>
-                See how your site
+                The hive that guards
                 <br />
-                <em>really performs.</em>
+                <em> your website</em>
               </h1>
               <p>
-                Paste a URL. You get one clear verdict.
+                Get one clear verdict.
               </p>
             </div>
             {job && (

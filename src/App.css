@@ -218,6 +218,10 @@ input::selection {
   box-sizing: border-box;
 }
 
+html {
+  cursor: url("/cursors/bug.svg") 16 16, auto;
+}
+
 button,
 input {
   font: inherit;
